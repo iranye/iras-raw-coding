@@ -3,6 +3,7 @@ AUTHOR_CODE/
 [Dd]ebug*/
 obj/
 .hg/
+.idea/
 /__pycache__/
 MvvmExample/
 .vs/
