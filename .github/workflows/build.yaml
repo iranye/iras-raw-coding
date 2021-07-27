@@ -13,6 +13,12 @@ jobs:
             run: pwd
           - name: List Files in Directory
             run: ls
+          - name: Check Dotnet Cli
+            run: dotnet --version
+          - name: Check NPM
+            run: npm --version
+          - name: List Files in Directory
+            run: ls
 
 # - name: Hello world
 #   uses: actions/hello-world:javascript-action@v1
