@@ -1,6 +1,7 @@
-name: Build my Application
+name: API Build and Deploy to Linode
 
-on: [push]
+on:
+  workflow_dispatch:
 
 jobs:
     build:
