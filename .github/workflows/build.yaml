@@ -9,18 +9,16 @@ jobs:
         steps:
           - name: Pull Code
             uses: actions/checkout@v2
-          - name: Print Current Directory
-            run: pwd
+          - uses: actions/setup-dotnet@v1
+            with:
+              dotnet-version: '3.1.x'
           - name: Check Dotnet Cli
             run: dotnet --version
-          - name: Check NPM
-            run: npm --version
+          - name: Restore Dependencies
+            run: dotnet restore
+          - name: Print Current Directory
+            run: pwd
+          - name: Create Production Build
+            run: dotnet publish -c Release --no-restore
           - name: List Files in Directory
             run: ls -R TrickingLibrary/
-
-# - name: Hello world
-#   uses: actions/hello-world:javascript-action@v1
-#   with:
-#     who-to-greet: 'Mona the Octocat'
-#   id: hello
-# 
