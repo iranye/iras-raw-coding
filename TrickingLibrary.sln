@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrickingLibrary.App", "Tric
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AFB18BCF-4373-490C-AF33-AB0AA86148C8}"
 	ProjectSection(SolutionItems) = preProject
-		..\.github\workflows\build.yaml = ..\.github\workflows\build.yaml
+		.github\workflows\build.yaml = .github\workflows\build.yaml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrickingLibrary.Api", "TrickingLibrary.Api\TrickingLibrary.Api.csproj", "{CD90FE93-9408-43CA-99B9-5D4B7FA23392}"
