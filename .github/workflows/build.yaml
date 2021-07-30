@@ -21,4 +21,4 @@ jobs:
           - name: Create Production Build
             run: dotnet publish -c Release --no-restore
           - name: List Files in Directory
-            run: ls -R TrickingLibrary/
+            run: ls -R TrickingLibrary.Api/
