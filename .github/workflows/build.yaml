@@ -29,5 +29,5 @@ jobs:
             env:
               SendGridOptions.ApiKey: ${{ secrets.SEND_GRID_API_KEY }}
               SendGridOptions.From: ${{ secrets.SEND_GRID_FROM }}
-          - name: Cat json
+          - name: Cat json 2
             run: cat ./TrickingLibrary.Api/bin/Release/net5.0/publish/appsettings.Production.json
